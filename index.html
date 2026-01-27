@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>WEBSITE PORTFOLIO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- navbar -->
+   <nav class="nav">
+    <div class="container-nav">
+      <h2 class="logo">Adjie Pradana</h2>
+      <ul class="ul-nav" id="navMenu">
+        <li class="li-nav">Home</li>
+        <li class="li-nav">Projects</li>
+        <li class="li-nav">Works</li>
+        <li class="li-nav">Contact</li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+    </div>
+   </nav>
+  <!-- navbar end -->
+
+  <!-- hero -->
+  <section class="hero">
+    <div class="container-hero">
+      <div class="hero-content">
+        <div class="hero-title">
+            <h1>Hi, I'm <br> Muhammad Adjie Pradana <br>Front-End Developer</h1>
+        </div>
+        <div class="hero-about">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero eius rerum molestiae nisi laudantium?</p>
+        </div>
+                <button class="btn btn-hero">Contact Me</button>
+        </div>
+        <img src="img/hero/hero.jpeg" alt="">
+    </div>
+  </section>
+  <!-- end hero -->
+
+  <!-- projects -->
+  <section class="projects">
+    <h1>Projects</h1>
+    <div class="projects-wrap">
+      <div class="projects-card">
+        <img src="img/work/work1.jpg" alt="">
+        <div class="projects-content">
+          <h3>Artificial Intelligence</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ea blanditiis nulla quasi iste!</p>
+          <button class="btn btn-projects">Get Started</button>
+        </div>
+      </div>
+
+       <div class="projects-card">
+        <img src="img/work/work2.jpg" alt="">
+        <div class="projects-content">
+          <h3>Artificial Intelligence</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ea blanditiis nulla quasi iste!</p>
+          <button class="btn btn-projects">Get Started</button>
+        </div>
+      </div>
+
+       <div class="projects-card">
+        <img src="img/work/work3.jpg" alt="">
+        <div class="projects-content">
+          <h3>Artificial Intelligence</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ea blanditiis nulla quasi iste!</p>
+          <button class="btn btn-projects">Get Started</button>
+        </div>
+      </div>
+
+       <div class="projects-card">
+        <img src="img/work/work4.jpg" alt="">
+        <div class="projects-content">
+          <h3>Artificial Intelligence</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ea blanditiis nulla quasi iste!</p>
+          <button class="btn btn-projects">Get Started</button>
+        </div>
+      </div>
+
+       <div class="projects-card">
+        <img src="img/work/work5.jpg" alt="">
+        <div class="projects-content">
+          <h3>Artificial Intelligence</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ea blanditiis nulla quasi iste!</p>
+          <button class="btn btn-projects">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end projects -->
+
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

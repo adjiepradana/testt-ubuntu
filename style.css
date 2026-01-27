@@ -1,0 +1,247 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E8E2DB;
+    font-family: 'Plus Jakarta Sans';
+}
+
+.nav {
+    background-color: #1A3263;
+    color:#fff;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.ul-nav {
+    gap: 24px;
+    display: flex;
+    z-index: 999;
+}
+
+.li-nav {
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+.li-nav:hover {
+    padding: 12px;
+    background-color: #e6a549;
+    border-radius: 12px;
+    transition: .2s ease-in-out;
+    transform: translateY(-8px);
+}
+
+/* hamburger icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+/* mobile menu */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .ul-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 240px;
+        height: 100vh;
+        background-color: #1A3263;
+        flex-direction: column;
+        padding: 100px 24px;
+        gap: 24px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .ul-nav.active {
+        right: 0;
+    }
+}
+
+
+/* animasi hamburger jadi X */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+.container-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    padding: 28px;
+    color: #1A3263;
+}
+
+.hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.hero-about {
+    font-size: 1.2rem;
+}
+
+.container-hero img {
+    width: 35%;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgb(17, 76, 251);
+}
+
+.btn-hero {
+    margin-top: 18px;
+    padding: 18px;
+    border: none;
+    background-color: #FAB95B;
+    color: #1A3263;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+        box-shadow: 0 12px 35px rgba(255, 238, 7, 0.758);
+}
+
+.btn-hero:hover {
+    background-color: #e6a549;
+    transform: translateY(-8px);
+}
+
+@media (max-width: 768px) {
+    .container-hero {
+        margin: 12px;
+    }
+
+    .hero-title {
+        font-size: 0.9rem;
+    }
+
+    .hero-about {
+        font-size: 0.8rem;
+    }
+
+    .container-hero img {
+        display: none;
+    }
+
+    .btn-hero{
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+.projects {
+    padding: 60px;
+}
+
+.projects h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    color: #1A3263;
+}
+
+.projects-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.projects-card {
+    width: 360px;
+    height: 490px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 10px  rgba(5, 82, 198, 0.672);
+    transition: 0.3s ease;
+}
+
+.projects-card:hover {
+    transform: translateY(-8px)
+}
+
+.projects-card img {
+    border-radius: 14px;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.projects-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.projects-content p {
+    margin-bottom: 24px;
+    line-height: 1.3;
+    color: #547782;
+}
+
+.btn-projects {
+    padding: 8px;
+    border: none;
+    font-size: 0.9rem;
+    color: #1A3263;
+    background-color: #FAB95B;
+    border-radius: 8px;
+}
+
+.btn-projects:hover {
+    background-color: #e6a549;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 24px;
+    }
+}
