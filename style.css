@@ -152,11 +152,11 @@ body {
     }
 
     .hero-title {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .hero-about {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .container-hero img {
@@ -164,13 +164,28 @@ body {
     }
 
     .btn-hero{
-        padding: 10px;
-        font-size: 1rem;
+        padding: 8px;
+        font-size: 0.8rem;
     }
 }
 
-.projects {
-    padding: 60px;
+.about {
+    background-color: #FAB95B;
+    padding: 40px 20px;
+    border-radius: 14px;
+    margin: 40px;
+    color: #1A3263;    
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.container-about {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .projects h1 {
